@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+axl:
+  id: 1
+  nome: 'Axl Rose'
+  documento: '555555555'
+  data_nascimento: "06/02/1962"
+
+elvis:
+  id: 2
+  nome: 'Elvis Presley'
+  documento: '555555555'
+  data_nascimento: "17/08/2008"
+
+joey:
+  id: 3
+  nome: 'Joey Ramone'
+  documento: '555555555'
+  data_nascimento: "19/05/1951"

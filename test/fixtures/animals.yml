@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+lassie:
+  nome: 'Lassie'
+  custo_mensal: 600
+  tipo_id: 3
+  pessoa_id: 3
+
+noel:
+  nome: 'Noel'
+  custo_mensal: 100
+  tipo_id: 2
+  pessoa_id: 1
+
+flora:
+  nome: 'Flora'
+  custo_mensal: 150
+  tipo_id: 1
+  pessoa_id: 2
+
+bidu:
+  nome: 'Bidu'
+  custo_mensal: 450
+  tipo_id: 3
+  pessoa_id: 3

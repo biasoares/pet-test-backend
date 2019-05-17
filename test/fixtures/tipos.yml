@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+andorinha:
+  id: 1
+  tipo: 'andorinha'
+
+gato:
+  id: 2
+  tipo: 'Gato'
+
+cachorro:
+  id: 3
+  tipo: 'Cachorro'

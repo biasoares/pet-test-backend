@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h3>Pessoa</h3>
+
+<div class="container" style="
+    width: 40%;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-left: initial;
+">
+<p>
+  <strong>Nome:</strong>
+  <%= @pessoa.nome %>
+</p>
+
+<p>
+  <strong>Documento:</strong>
+  <%= @pessoa.documento %>
+</p>
+
+<p>
+  <strong>Data Nascimento:</strong>
+  <%= @pessoa.data_nascimento %>
+</p>
+</div>
+</br>
+
+<%= link_to 'Editar', edit_pessoa_path(@pessoa), class:"btn btn-default btn-sm" %>
+<%= link_to 'Voltar', pessoas_path, class:"btn btn-default btn-sm" %>

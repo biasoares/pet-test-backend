@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h3>Tipo</h3>
+<div class="container" style="
+    width: 40%;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-left: initial;
+">
+<p>
+  <strong>Tipo:</strong>
+  <%= @tipo.tipo %>
+</p>
+</div>
+</br>
+<%= link_to 'Editar', edit_tipo_path(@tipo), class:"btn btn-default btn-sm" %>
+<%= link_to 'Voltar', tipos_path, class:"btn btn-default btn-sm" %>

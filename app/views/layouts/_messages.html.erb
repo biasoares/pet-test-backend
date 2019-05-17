@@ -1,0 +1,8 @@
+<% if flash.present? %>
+  <div class="alert alert-<%= flash.map{ |type, message| type}[0].to_s %> alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <%= flash.map{ |type, message| message}[0] %>
+  </div>
+<% end %>

@@ -1,0 +1,53 @@
+<%= form_for(@animal) do |f| %>
+  <% if @animal.errors.any? %>
+    <div class="alert alert-warning alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+        <% @animal.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+    </div>
+  <% end %>
+    <div class="row">
+    <div class="col-sm-2">
+      <div class="form-group">
+        <%= f.label :nome %>
+        <%= f.text_field :nome, class:"form-control" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="form-group">
+        <%= f.label :custo_mensal %>
+        <%= f.text_field :custo_mensal, class:"form-control" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="form-group">
+        <%= f.label :tipo %>
+        <%= f.collection_select :tipo_id, Tipo.order(:tipo), :id, :tipo, {}, class:"form-control", include_blank: false, required: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="form-group">
+        <%= f.label :dono %>
+        <%= f.collection_select :pessoa_id, Pessoa.order(:nome), :id, :nome, {}, class:"form-control", required: true %>
+      </div>
+    </div>
+  </div>
+  </br>
+
+  <div class="actions">
+    <%= f.submit nil, class: 'btn btn-primary btn-sm' %>
+  </div>
+  </br>
+<% end %>
